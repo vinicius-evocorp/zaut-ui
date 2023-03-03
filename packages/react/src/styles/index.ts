@@ -45,7 +45,7 @@ export const {
     space,
     zIndices,
     shadows,
-    // transitions
+    //  TODO transitions
   },
 
   media: {

@@ -12,7 +12,7 @@ export const Button = styled('button', {
   textTransform: 'uppercase',
   textDecoration: 'none',
   boxSizing: 'border-box',
-  border: '2px solid $transparent',
+  border: '$borderWidths$2 $borderStyles$solid $colors$transparent',
 
   display: 'inline-flex',
   alignItems: 'center',
@@ -39,7 +39,7 @@ export const Button = styled('button', {
         backgroundColor: '$transparent',
       },
       ghost: {
-        borderColor: 'transparent',
+        borderColor: '$transparent',
         backgroundColor: '$transparent',
       },
       text: {
@@ -78,7 +78,7 @@ export const Button = styled('button', {
     },
     fullWidth: {
       true: {
-        width: '100%',
+        width: '$full',
       },
     },
   },
