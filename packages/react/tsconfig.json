@@ -1,0 +1,10 @@
+{
+  "extends": "@zaut-ui/ts-config/react-library.json",
+  "include": ["src"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}

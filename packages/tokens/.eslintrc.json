@@ -1,0 +1,3 @@
+{
+  "extends": "@zaut-ui/eslint-config"
+}

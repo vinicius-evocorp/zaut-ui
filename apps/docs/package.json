@@ -1,27 +1,37 @@
 {
-  "name": "docs",
+  "name": "@zaut-ui/docs",
   "version": "0.0.0",
   "private": true,
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev --port 3001",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "^13.1.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "ui": "workspace:*"
+    "build": "build-storybook --output-dir dist",
+    "dev": "start-storybook -p 6006 --no-open",
+    "deploy-storybook": "storybook-to-ghpages",
+    "lint": "TIMING=1 eslint \"src/**/*.ts*\"",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "eslint-config-custom": "workspace:*",
-    "eslint": "7.32.0",
-    "tsconfig": "workspace:*",
-    "@types/node": "^17.0.12",
-    "@types/react": "^18.0.22",
-    "@types/react-dom": "^18.0.7",
-    "typescript": "^4.5.3"
+    "@babel/core": "^7.20.12",
+    "@storybook/addon-a11y": "^6.5.16",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-vite": "^0.4.2",
+    "@storybook/react": "^6.5.16",
+    "@storybook/storybook-deployer": "^2.8.16",
+    "@storybook/testing-library": "^0.0.13",
+    "@vitejs/plugin-react": "^3.1.0",
+    "babel-loader": "^8.3.0",
+    "vite": "^4.1.1"
+  },
+  "dependencies": {
+    "@zaut-ui/eslint-config": "*",
+    "@zaut-ui/react": "*",
+    "@zaut-ui/tokens": "*",
+    "@zaut-ui/ts-config": "*",
+    "phosphor-react": "^1.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
