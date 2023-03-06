@@ -88,7 +88,7 @@ export const Button = styled('button', {
       color: 'primary',
       variant: 'contained',
       css: {
-        color: '$white',
+        color: '$gray-900',
         backgroundColor: '$primary-500',
 
         '&:not(:disabled):hover': {
@@ -101,7 +101,7 @@ export const Button = styled('button', {
       variant: 'outlined',
       css: {
         color: '$primary-700',
-        borderColor: '$primary-300',
+        borderColor: '$primary-200',
 
         '&:not(:disabled):hover': {
           backgroundColor: '$primary-50',
@@ -112,7 +112,7 @@ export const Button = styled('button', {
       color: 'primary',
       variant: 'ghost',
       css: {
-        color: '$primary-700',
+        color: '$primary-800',
         backgroundColor: '$primary-50',
 
         '&:not(:disabled):hover': {

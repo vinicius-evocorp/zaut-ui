@@ -2,6 +2,8 @@ import * as Avatar from '@radix-ui/react-avatar'
 import { styled } from '@/styles'
 
 export const AvatarContainer = styled(Avatar.Root, {
+  color: '$white',
+  backgroundColor: '$gray-500',
   borderRadius: '$full',
   display: 'inline-block',
   overflow: 'hidden',
@@ -43,8 +45,7 @@ export const AvatarFallback = styled(Avatar.Fallback, {
   justifyContent: 'center',
 
   size: '$full',
-  color: '$white',
-  backgroundColor: '$gray-500',
+  backgroundColor: 'inherit',
 
   fontFamily: '$default',
   fontWeight: '$medium',

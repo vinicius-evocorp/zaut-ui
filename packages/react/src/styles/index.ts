@@ -5,15 +5,16 @@ import {
   borderWidths,
   breakpoints,
   colors,
+  fonts,
   fontSizes,
   fontWeights,
-  fonts,
   letterSpacings,
   lineHeights,
   radii,
-  shadows,
   sizes,
   space,
+  shadows,
+  // transitions, // TODO
   zIndices,
 } from '@zaut-ui/tokens'
 
@@ -35,17 +36,17 @@ export const {
     borderStyles,
     borderWidths,
     colors,
+    fonts,
     fontSizes,
     fontWeights,
-    fonts,
     letterSpacings,
     lineHeights,
     radii,
     sizes,
     space,
-    zIndices,
     shadows,
-    //  TODO transitions
+    // transitions, // TODO
+    zIndices,
   },
 
   media: {

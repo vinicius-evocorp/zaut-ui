@@ -9,7 +9,7 @@ export const IconButton = styled('button', {
   color: '$gray-600',
   backgroundColor: '$gray-100',
   borderRadius: '$lg',
-  lineHeight: 0,
+  lineHeight: '$none',
   cursor: 'pointer',
 
   transition: 'all 0.2s ease-in-out',

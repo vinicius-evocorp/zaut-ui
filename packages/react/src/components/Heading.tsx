@@ -2,7 +2,7 @@ import { styled } from '@/styles'
 import { ComponentProps } from '@/types'
 
 export const Heading = styled('h2', {
-  margin: 0,
+  margin: '$0',
 
   fontFamily: '$default',
   fontWeight: '$bold',

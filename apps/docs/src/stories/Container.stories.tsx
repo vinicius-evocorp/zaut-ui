@@ -14,28 +14,17 @@ export default {
   },
   args: {
     size: 'md',
-    disablePadding: false,
+    children: <Text>Container</Text>,
     css: {
       color: '$white',
-      backgroundColor: '$secondary-500',
+      backgroundColor: '$red-600',
     },
-    children: <Text>Container</Text>,
   },
   argTypes: {
     size: {
       options: ['sm', 'md', 'lg', '2xl'],
       control: {
         type: 'inline-radio',
-      },
-    },
-    disablePadding: {
-      control: {
-        type: 'boolean',
-      },
-    },
-    css: {
-      control: {
-        type: null,
       },
     },
     children: {

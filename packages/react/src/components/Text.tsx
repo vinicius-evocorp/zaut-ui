@@ -2,7 +2,7 @@ import { styled } from '@/styles'
 import { ComponentProps } from '@/types'
 
 export const Text = styled('p', {
-  margin: 0,
+  margin: '$0',
 
   fontFamily: '$default',
   fontWeight: '$regular',

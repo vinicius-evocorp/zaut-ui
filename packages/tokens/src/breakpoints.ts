@@ -1,7 +1,9 @@
+import { sizes } from './sizes'
+
 export const breakpoints = {
-  sm: `(min-width: 640px)`,
-  md: `(min-width: 768px)`,
-  lg: `(min-width: 1024px)`,
-  xl: `(min-width: 1280px)`,
-  '2xl': `(min-width: 1536px)`,
+  sm: `(min-width: ${sizes['container-sm']})`,
+  md: `(min-width: ${sizes['container-md']})`,
+  lg: `(min-width: ${sizes['container-lg']})`,
+  xl: `(min-width: ${sizes['container-xl']})`,
+  '2xl': `(min-width: ${sizes['container-2xl']})`,
 } as const

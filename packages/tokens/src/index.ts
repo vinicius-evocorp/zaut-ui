@@ -1,12 +1,14 @@
 export * from './colors'
 export * from './shadows'
+export * from './z-indices'
+
 export * from './radii'
 export * from './border-styles'
 export * from './border-widths'
-export * from './space'
-export * from './sizes'
+
 export * from './breakpoints'
-export * from './z-indices'
+export * from './sizes'
+export * from './space'
 
 export * from './fonts'
 export * from './font-sizes'

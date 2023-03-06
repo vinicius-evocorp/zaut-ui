@@ -22,7 +22,8 @@
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.0.1",
-    "@stitches/react": "^1.2.8"
+    "@stitches/react": "^1.2.8",
+    "polished": "^4.2.2"
   },
   "publishConfig": {
     "access": "public"

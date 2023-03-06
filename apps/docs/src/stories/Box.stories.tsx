@@ -17,7 +17,7 @@ export default {
       padding: '$4',
       borderRadius: '$lg',
       color: '$white',
-      backgroundColor: '$secondary-500',
+      backgroundColor: '$red-600',
     },
     children: <Text>This is the Box</Text>,
   },
