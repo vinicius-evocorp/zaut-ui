@@ -1,8 +1,5 @@
 {
   "name": "@zaut-ui-beta/ts-config",
-  "version": "0.0.0",
-  "private": true,
-  "publishConfig": {
-    "access": "public"
-  }
+  "version": "1.0.0",
+  "private": true
 }

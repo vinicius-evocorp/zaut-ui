@@ -61,18 +61,6 @@ export const colors = {
 
   // * branding
 
-  'primary-50': '#F9FAEB',
-  'primary-100': '#F3F4D8',
-  'primary-200': '#E7E9B0',
-  'primary-300': '#DBDF89',
-  'primary-400': '#CFD461',
-  'primary-500': '#C3C93A',
-  'primary-600': '#9CA12E',
-  'primary-700': '#757923',
-  'primary-800': '#4E5017',
-  'primary-900': '#27280C',
-
-  // * Primary colors based in current theme zaut-backoffice and zaut-company
   // 'primary-50': '#EAF6F4',
   // 'primary-100': '#D5EDE8',
   // 'primary-200': '#ABDBD1',
@@ -83,6 +71,17 @@ export const colors = {
   // 'primary-700': '#1A6355',
   // 'primary-800': '#124238',
   // 'primary-900': '#09211C',
+
+  'primary-50': '#F9FAEB',
+  'primary-100': '#F3F4D8',
+  'primary-200': '#E7E9B0',
+  'primary-300': '#DBDF89',
+  'primary-400': '#CFD461',
+  'primary-500': '#C3C93A',
+  'primary-600': '#9CA12E',
+  'primary-700': '#757923',
+  'primary-800': '#4E5017',
+  'primary-900': '#27280C',
 
   'secondary-50': '#ECEDED',
   'secondary-100': '#D9DADC',
