@@ -1,6 +1,6 @@
 import { getContrast } from 'polished'
-import { Box, Flex, Heading, Text } from '@zaut-ui/react'
-import { colors } from '@zaut-ui/tokens'
+import { Box, Flex, Heading, Text } from '@zaut-ui-beta/react'
+import { colors } from '@zaut-ui-beta/tokens'
 
 const contrast = '#FFF'
 

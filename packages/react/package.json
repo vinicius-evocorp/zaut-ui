@@ -1,5 +1,5 @@
 {
-  "name": "@zaut-ui/react",
+  "name": "@zaut-ui-beta/react",
   "version": "0.0.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -13,9 +13,9 @@
   "devDependencies": {
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
-    "@zaut-ui/eslint-config": "*",
-    "@zaut-ui/tokens": "*",
-    "@zaut-ui/ts-config": "*",
+    "@zaut-ui-beta/eslint-config": "*",
+    "@zaut-ui-beta/tokens": "*",
+    "@zaut-ui-beta/ts-config": "*",
     "react": "^18.2.0",
     "tsup": "^6.6.3",
     "typescript": "4.7.4"

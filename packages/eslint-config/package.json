@@ -1,5 +1,5 @@
 {
-  "name": "@zaut-ui/eslint-config",
+  "name": "@zaut-ui-beta/eslint-config",
   "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",

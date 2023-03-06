@@ -1,4 +1,4 @@
 module.exports = {
   reactStrictMode: true,
-  transpilePackages: ['@zaut-ui/react'],
+  transpilePackages: ['@zaut-ui-beta/react'],
 }

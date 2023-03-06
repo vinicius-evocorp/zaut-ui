@@ -1,4 +1,4 @@
-import { globalCss } from '@zaut-ui/react'
+import { globalCss } from '@zaut-ui-beta/react'
 
 export const globalStyles = globalCss({
   '*': {

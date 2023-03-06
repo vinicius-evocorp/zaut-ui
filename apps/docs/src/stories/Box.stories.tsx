@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Box, BoxProps, Text } from '@zaut-ui/react'
+import { Box, BoxProps, Text } from '@zaut-ui-beta/react'
 
 export default {
   title: 'Layout/Box',

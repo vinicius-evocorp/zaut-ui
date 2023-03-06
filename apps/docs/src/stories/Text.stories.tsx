@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Text, TextProps } from '@zaut-ui/react'
+import { Text, TextProps } from '@zaut-ui-beta/react'
 
 export default {
   title: 'Typography/Text',

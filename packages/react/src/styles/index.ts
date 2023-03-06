@@ -16,7 +16,7 @@ import {
   shadows,
   // transitions, // TODO
   zIndices,
-} from '@zaut-ui/tokens'
+} from '@zaut-ui-beta/tokens'
 
 export const {
   styled,

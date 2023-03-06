@@ -1,5 +1,5 @@
 {
-  "name": "@zaut-ui/playground",
+  "name": "@zaut-ui-beta/playground",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,7 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf .next"
   },
   "dependencies": {
-    "@zaut-ui/react": "*",
+    "@zaut-ui-beta/react": "*",
     "@hookform/resolvers": "^2.9.11",
     "@next/font": "^13.1.6",
     "next": "^13.1.1",
@@ -22,8 +22,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
-    "@zaut-ui/eslint-config": "*",
-    "@zaut-ui/ts-config": "*",
+    "@zaut-ui-beta/eslint-config": "*",
+    "@zaut-ui-beta/ts-config": "*",
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",

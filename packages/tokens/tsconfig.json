@@ -1,4 +1,4 @@
 {
-  "extends": "@zaut-ui/ts-config/base.json",
+  "extends": "@zaut-ui-beta/ts-config/base.json",
   "include": ["src"]
 }

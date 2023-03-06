@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { AppleLogo } from 'phosphor-react'
-import { IconButton, IconButtonProps } from '@zaut-ui/react'
+import { IconButton, IconButtonProps } from '@zaut-ui-beta/react'
 
 export default {
   title: 'Form/IconButton',

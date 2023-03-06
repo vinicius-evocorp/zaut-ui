@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Flex, FlexProps, Box, Text } from '@zaut-ui/react'
+import { Flex, FlexProps, Box, Text } from '@zaut-ui-beta/react'
 
 export default {
   title: 'Layout/Flex',

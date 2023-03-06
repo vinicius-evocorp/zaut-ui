@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Container, ContainerProps, Text } from '@zaut-ui/react'
+import { Container, ContainerProps, Text } from '@zaut-ui-beta/react'
 
 export default {
   title: 'Layout/Container',

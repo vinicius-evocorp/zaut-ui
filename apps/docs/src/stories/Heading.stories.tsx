@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Heading, HeadingProps } from '@zaut-ui/react'
+import { Heading, HeadingProps } from '@zaut-ui-beta/react'
 
 export default {
   title: 'Typography/Heading',

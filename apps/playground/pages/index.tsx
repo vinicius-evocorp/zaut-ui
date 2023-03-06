@@ -1,4 +1,4 @@
-import { Center, Container, Heading, Text } from '@zaut-ui/react'
+import { Center, Container, Heading, Text } from '@zaut-ui-beta/react'
 
 export default function Home() {
   return (
