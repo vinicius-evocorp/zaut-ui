@@ -19,15 +19,15 @@ jobs:
           cache: "pnpm"
           cache-dependency-path: "**/pnpm-lock.yaml"
 
-      - run: pnpm ci
+      - run: npm ci
 
-      - run: pnpm run build
+      - run: npm run build
         env:
           TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           TURBO_TEAM: vinicius-evocorp
 
       - name: Deploy storybook
         working-directory: ./apps/docs
-        run: pnpm run deploy-storybook -- --ci --existing-output-dir=dist
+        run: npm run deploy-storybook -- --ci --existing-output-dir=dist
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
