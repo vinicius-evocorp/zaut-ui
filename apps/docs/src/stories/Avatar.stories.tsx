@@ -15,7 +15,7 @@ export default {
   args: {
     src: 'https://images.unsplash.com/photo-1504199367641-aba8151af406?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
     alt: 'John Duo',
-    square: false,
+    variant: 'circular',
     size: 'md',
     children: 'JD',
   },
@@ -25,9 +25,10 @@ export default {
         type: 'text',
       },
     },
-    square: {
+    variant: {
+      options: ['square', 'rounded', 'circular'],
       control: {
-        type: 'boolean',
+        type: 'inline-radio',
       },
     },
     size: {
@@ -43,7 +44,19 @@ export const Default: StoryObj<AvatarProps> = {}
 
 export const Square: StoryObj<AvatarProps> = {
   args: {
-    square: true,
+    variant: 'square',
+  },
+}
+
+export const Rounded: StoryObj<AvatarProps> = {
+  args: {
+    variant: 'rounded',
+  },
+}
+
+export const Circular: StoryObj<AvatarProps> = {
+  args: {
+    variant: 'circular',
   },
 }
 

@@ -1,4 +1,5 @@
 import { ReactNode } from 'react'
+
 import { Heading } from '@zaut-ui-beta/react'
 
 export function Title({ children }: { children?: ReactNode }) {

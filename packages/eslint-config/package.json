@@ -2,9 +2,8 @@
   "name": "@zaut-ui-beta/eslint-config",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
   "devDependencies": {
-    "@rocketseat/eslint-config": "^1.2.0",
+    "@evocorp/eslint-config": "^1.0.0",
     "eslint": "^8.35.0"
   }
 }

@@ -1,5 +1,5 @@
-import { Html, Head, Main, NextScript } from 'next/document'
 import { getCssText } from '@zaut-ui-beta/react'
+import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (

@@ -18,8 +18,9 @@ export default {
       borderRadius: '$lg',
       color: '$white',
       backgroundColor: '$red-600',
+      boxShadow: '$xl',
     },
-    children: <Text>This is the Box</Text>,
+    children: <Text weight="semibold">This is the Box</Text>,
   },
   argTypes: {
     children: {

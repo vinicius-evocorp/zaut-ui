@@ -14,10 +14,17 @@ export default {
   args: {
     children: "I'm a Heading",
     size: 'md',
+    weight: 'bold',
   },
   argTypes: {
     size: {
       options: ['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    weight: {
+      options: ['regular', 'medium', 'semibold', 'bold'],
       control: {
         type: 'inline-radio',
       },

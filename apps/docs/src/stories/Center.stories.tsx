@@ -18,7 +18,7 @@ export default {
       borderRadius: '$lg',
       backgroundColor: '$red-600',
       color: '$white',
-      height: '$32',
+      height: '$40',
     },
   },
   argTypes: {

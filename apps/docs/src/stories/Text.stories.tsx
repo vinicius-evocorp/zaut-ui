@@ -14,6 +14,7 @@ export default {
   },
   args: {
     size: 'md',
+    weight: 'regular',
     children:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro reprehenderit est veniam? Rem recusandae sint perspiciatis debitis corrupti. Deserunt neque exercitationem illo voluptatum laudantium culpa suscipit accusantium blanditiis voluptas numquam.',
   },
@@ -34,6 +35,12 @@ export default {
         '8xl',
         '9xl',
       ],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    weight: {
+      options: ['regular', 'medium', 'semibold', 'bold'],
       control: {
         type: 'inline-radio',
       },

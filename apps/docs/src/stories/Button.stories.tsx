@@ -1,6 +1,6 @@
-import { ArrowRight } from 'phosphor-react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { Button, ButtonProps } from '@zaut-ui-beta/react'
+import { ArrowRight } from 'phosphor-react'
 
 export default {
   title: 'Form/Button',
@@ -15,11 +15,11 @@ export default {
   },
   args: {
     color: 'primary',
-    variant: 'contained',
+    variant: 'solid',
     size: 'md',
+    fullWidth: false,
     disabled: false,
     children: 'Button',
-    fullWidth: false,
   },
   argTypes: {
     color: {
@@ -29,7 +29,7 @@ export default {
       },
     },
     variant: {
-      options: ['contained', 'outlined', 'ghost', 'text'],
+      options: ['solid', 'outline', 'ghost', 'text', 'link'],
       control: {
         type: 'inline-radio',
       },
@@ -40,12 +40,12 @@ export default {
         type: 'inline-radio',
       },
     },
-    disabled: {
+    fullWidth: {
       control: {
         type: 'boolean',
       },
     },
-    fullWidth: {
+    disabled: {
       control: {
         type: 'boolean',
       },
@@ -56,27 +56,38 @@ export default {
 
 export const Default: StoryObj<ButtonProps> = {}
 
-export const Contained: StoryObj<ButtonProps> = {
+export const Solid: StoryObj<ButtonProps> = {
   args: {
-    variant: 'contained',
+    variant: 'solid',
+    children: 'Solid',
   },
 }
 
-export const Outlined: StoryObj<ButtonProps> = {
+export const Outline: StoryObj<ButtonProps> = {
   args: {
-    variant: 'outlined',
+    variant: 'outline',
+    children: 'Outline',
   },
 }
 
 export const Ghost: StoryObj<ButtonProps> = {
   args: {
     variant: 'ghost',
+    children: 'Ghost',
   },
 }
 
 export const Text: StoryObj<ButtonProps> = {
   args: {
     variant: 'text',
+    children: 'Text',
+  },
+}
+
+export const Link: StoryObj<ButtonProps> = {
+  args: {
+    variant: 'link',
+    children: 'Link',
   },
 }
 
@@ -95,6 +106,12 @@ export const Medium: StoryObj<ButtonProps> = {
 export const Large: StoryObj<ButtonProps> = {
   args: {
     size: 'lg',
+  },
+}
+
+export const FullWidth: StoryObj<ButtonProps> = {
+  args: {
+    fullWidth: true,
   },
 }
 

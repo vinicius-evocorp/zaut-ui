@@ -1,4 +1,5 @@
 import { ReactNode } from 'react'
+
 import { Text } from '@zaut-ui-beta/react'
 
 export function Description({ children }: { children?: ReactNode }) {

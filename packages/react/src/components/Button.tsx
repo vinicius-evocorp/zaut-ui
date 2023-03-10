@@ -1,30 +1,31 @@
+import { styled } from '@/styles'
 import { ComponentProps } from '@/types'
-import { styled } from '@stitches/react'
 
 export const Button = styled('button', {
   all: 'unset',
-
-  borderRadius: '$lg',
-  fontSize: '$sm',
-  fontWeight: '$semibold',
-  fontFamily: '$default',
-  textAlign: 'center',
-  textTransform: 'uppercase',
-  textDecoration: 'none',
-  boxSizing: 'border-box',
-  border: '$borderWidths$2 $borderStyles$solid $colors$transparent',
 
   display: 'inline-flex',
   alignItems: 'center',
   justifyContent: 'center',
   gap: '$2',
 
+  fontSize: '$sm',
+  fontWeight: '$semibold',
+  fontFamily: '$default',
+  lineHeight: '$none',
+
+  textAlign: 'center',
+  textDecoration: 'none',
+  boxSizing: 'border-box',
+  border: '$borderWidths$1 $borderStyles$solid $colors$transparent',
+  borderRadius: '$lg',
+
   cursor: 'pointer',
 
   transition: 'all 0.2s ease-in-out',
 
   '&:disabled': {
-    opacity: 0.4,
+    opacity: 0.5,
     cursor: 'not-allowed',
   },
 
@@ -34,16 +35,14 @@ export const Button = styled('button', {
       secondary: {},
     },
     variant: {
-      contained: {},
-      outlined: {
-        backgroundColor: '$transparent',
-      },
-      ghost: {
-        borderColor: '$transparent',
-        backgroundColor: '$transparent',
-      },
-      text: {
-        backgroundColor: '$transparent',
+      solid: {},
+      outline: {},
+      ghost: {},
+      text: {},
+      link: {
+        textDecoration: 'underline',
+        textDecorationThickness: 2,
+        textUnderlineOffset: 4,
       },
     },
     size: {
@@ -86,7 +85,7 @@ export const Button = styled('button', {
   compoundVariants: [
     {
       color: 'primary',
-      variant: 'contained',
+      variant: 'solid',
       css: {
         color: '$gray-900',
         backgroundColor: '$primary-500',
@@ -98,7 +97,7 @@ export const Button = styled('button', {
     },
     {
       color: 'primary',
-      variant: 'outlined',
+      variant: 'outline',
       css: {
         color: '$primary-700',
         borderColor: '$primary-200',
@@ -127,13 +126,24 @@ export const Button = styled('button', {
         color: '$primary-700',
 
         '&:not(:disabled):hover': {
-          backgroundColor: '$primary-50',
+          color: '$primary-800',
+        },
+      },
+    },
+    {
+      color: 'primary',
+      variant: 'link',
+      css: {
+        color: '$primary-700',
+
+        '&:not(:disabled):hover': {
+          color: '$primary-800',
         },
       },
     },
     {
       color: 'secondary',
-      variant: 'contained',
+      variant: 'solid',
       css: {
         color: '$white',
         backgroundColor: '$secondary-500',
@@ -145,13 +155,12 @@ export const Button = styled('button', {
     },
     {
       color: 'secondary',
-      variant: 'outlined',
+      variant: 'outline',
       css: {
         color: '$secondary-500',
         borderColor: '$secondary-100',
 
         '&:not(:disabled):hover': {
-          borderColor: '$secondary-100',
           backgroundColor: '$secondary-50',
         },
       },
@@ -175,7 +184,18 @@ export const Button = styled('button', {
         color: '$secondary-500',
 
         '&:not(:disabled):hover': {
-          backgroundColor: '$secondary-50',
+          color: '$secondary-800',
+        },
+      },
+    },
+    {
+      color: 'secondary',
+      variant: 'link',
+      css: {
+        color: '$secondary-500',
+
+        '&:not(:disabled):hover': {
+          color: '$secondary-800',
         },
       },
     },
@@ -183,7 +203,7 @@ export const Button = styled('button', {
 
   defaultVariants: {
     color: 'primary',
-    variant: 'contained',
+    variant: 'solid',
     size: 'md',
     fullWidth: false,
   },

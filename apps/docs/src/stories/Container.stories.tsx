@@ -18,6 +18,8 @@ export default {
     css: {
       color: '$white',
       backgroundColor: '$red-600',
+      borderRadius: '$lg',
+      minHeight: '$96',
     },
   },
   argTypes: {

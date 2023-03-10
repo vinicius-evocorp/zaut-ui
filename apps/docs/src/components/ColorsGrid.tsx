@@ -1,8 +1,8 @@
-import { getContrast } from 'polished'
 import { Box, Flex, Heading, Text } from '@zaut-ui-beta/react'
 import { colors } from '@zaut-ui-beta/tokens'
+import { getContrast } from 'polished'
 
-const contrast = '#FFF'
+const contrast = colors.white
 
 export function ColorsGrid() {
   return Object.entries(colors).map(([key, color]) => {
@@ -12,7 +12,6 @@ export function ColorsGrid() {
           justify="between"
           align="center"
           css={{
-            fontFamily: 'monospace',
             color: getContrast(color, contrast) < 3.5 ? '$black' : '$white',
           }}
         >

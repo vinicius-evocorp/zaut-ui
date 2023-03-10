@@ -5,7 +5,6 @@ export const Heading = styled('h2', {
   margin: '$0',
 
   fontFamily: '$default',
-  fontWeight: '$bold',
   color: 'inherit',
 
   variants: {
@@ -43,10 +42,25 @@ export const Heading = styled('h2', {
         lineHeight: '$none',
       },
     },
+    weight: {
+      regular: {
+        fontWeight: '$regular',
+      },
+      medium: {
+        fontWeight: '$medium',
+      },
+      semibold: {
+        fontWeight: '$semibold',
+      },
+      bold: {
+        fontWeight: '$bold',
+      },
+    },
   },
 
   defaultVariants: {
     size: 'md',
+    weight: 'bold',
   },
 })
 

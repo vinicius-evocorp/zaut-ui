@@ -1,40 +1,51 @@
 import * as Avatar from '@radix-ui/react-avatar'
+
 import { styled } from '@/styles'
 
 export const AvatarContainer = styled(Avatar.Root, {
   color: '$white',
-  backgroundColor: '$gray-500',
-  borderRadius: '$full',
+  backgroundColor: '$gray-900',
+
   display: 'inline-block',
   overflow: 'hidden',
 
   variants: {
-    square: {
-      true: {
+    variant: {
+      square: {
+        borderRadius: '$none',
+      },
+      rounded: {
         borderRadius: '$lg',
+      },
+      circular: {
+        borderRadius: '$full',
       },
     },
     size: {
       sm: {
-        size: '$6',
+        width: '$8',
+        height: '$8',
       },
       md: {
-        size: '$10',
+        width: '$12',
+        height: '$12',
       },
       lg: {
-        size: '$14',
+        width: '$16',
+        height: '$16',
       },
     },
   },
 
   defaultVariants: {
-    square: false,
+    variant: 'circle',
     size: 'md',
   },
 })
 
 export const AvatarImage = styled(Avatar.Image, {
-  size: '$full',
+  width: '$full',
+  height: '$full',
   objectFit: 'cover',
   borderRadius: 'inherit',
 })
@@ -44,9 +55,11 @@ export const AvatarFallback = styled(Avatar.Fallback, {
   alignItems: 'center',
   justifyContent: 'center',
 
-  size: '$full',
+  width: '$full',
+  height: '$full',
   backgroundColor: 'inherit',
 
   fontFamily: '$default',
   fontWeight: '$medium',
+  lineHeight: '$none',
 })

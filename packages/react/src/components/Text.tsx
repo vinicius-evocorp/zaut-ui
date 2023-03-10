@@ -5,7 +5,6 @@ export const Text = styled('p', {
   margin: '$0',
 
   fontFamily: '$default',
-  fontWeight: '$regular',
   color: 'inherit',
 
   variants: {
@@ -63,10 +62,25 @@ export const Text = styled('p', {
         lineHeight: '$none',
       },
     },
+    weight: {
+      regular: {
+        fontWeight: '$regular',
+      },
+      medium: {
+        fontWeight: '$medium',
+      },
+      semibold: {
+        fontWeight: '$semibold',
+      },
+      bold: {
+        fontWeight: '$bold',
+      },
+    },
   },
 
   defaultVariants: {
     size: 'md',
+    weight: 'regular',
   },
 })
 
