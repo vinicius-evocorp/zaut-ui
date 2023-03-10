@@ -38,7 +38,7 @@ export const AvatarContainer = styled(Avatar.Root, {
   },
 
   defaultVariants: {
-    variant: 'circle',
+    variant: 'circular',
     size: 'md',
   },
 })
