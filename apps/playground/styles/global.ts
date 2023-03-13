@@ -8,16 +8,14 @@ export const globalStyles = globalCss({
   },
 
   body: {
-    backgroundColor: '$white',
-    color: '$gray-900',
+    backgroundColor: '$gray-900',
+    color: '$gray-100',
     fontFamily: '$default',
     '-webkit-font-smoothing': 'antialiased',
   },
 
   a: {
     all: 'unset',
-    appearance: 'none',
-    display: 'block',
   },
 
   '@import': [

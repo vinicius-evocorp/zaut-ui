@@ -9,7 +9,7 @@ export interface AvatarProps extends ComponentProps<typeof AvatarImage> {
   size?: ComponentProps<typeof AvatarContainer>['size']
 }
 
-export function Avatar({ variant, size, children, css, ...rest }: AvatarProps) {
+export function Avatar({ variant, size, css, children, ...rest }: AvatarProps) {
   return (
     <AvatarContainer size={size} variant={variant} css={css}>
       <AvatarImage {...rest} />
